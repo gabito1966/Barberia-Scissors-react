@@ -1,0 +1,38 @@
+[
+    {
+        "title":"Corte de pelo",
+        "image":"./src/assets/img/corte-tijera.jpg",
+        "description":"Corte de pelo a tijera",
+        "price":5000
+    },
+    {
+        "title": "Corte de pelo",
+        "image": "./src/assets/img/corte-navaja.jpg",
+        "description": "Corte de pelo a navaja",
+        "price": 7000
+    },
+    {
+        "title": "Corte de pelo",
+        "image": "./src/assets/img/cabello-barba.jpg",
+        "description": "Corte completo de pelo y barba",
+        "price": 11000
+    },
+    {
+        "title": "Coloracion",
+        "image": "./src/assets/img/decoloracion.jpg",
+        "description": "Decoloracion de cabello ",
+        "price": 21000
+    },
+    {
+        "title": "Coloracion",
+        "image": "./src/assets/img/tintura.jpg",
+        "description": "Coloracion de cabello",
+        "price": 25000
+    },
+    {
+        "title": "Coloracion",
+        "image": "./src/assets/img/color-pelo.jpg",
+        "description": "Coloracion con diseños personalizados",
+        "price": 35000
+    }
+]

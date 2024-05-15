@@ -1,0 +1,104 @@
+main {
+    max-width: 80%;
+}
+
+.contacto {
+    background: #f8fafa;
+    background: linear-gradient(180deg, #f8fafa 0%, #878684 100%);
+    display: block;
+    width: 70%;
+    align-items: center;
+}
+
+.titulo-secundario {
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.formulario {
+    width: 100%;
+    gap: 40px;
+    padding: 20px;
+}
+
+.formulario__grupo {
+    padding: 10px;
+
+}
+
+.formulario__grupo-input {
+    position: relative;
+}
+
+.formulario__input {
+    width: 100%;
+    background: #cfcdcd;
+    border: 3px solid transparent;
+    border-radius: 3px;
+    height: 45px;
+    line-height: 45px;
+    padding: 0 40px 0 10px;
+    transition: .3s ease all;
+}
+
+.formulario__input:focus {
+    border: 3px solid #0075FF;
+    outline: none;
+    box-shadow: 3px 0px 30px rgba(163, 163, 163, 0.4);
+}
+
+.form-contact {
+    display: flex;
+    align-items: center;
+    max-width: 80%;
+    padding-left:8%;
+}
+
+.form-control {
+    margin: 10px;
+}
+
+.formulario__label {
+    display: block;
+    font-weight: 700;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.boton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+legend {
+    padding: 10px;
+    font-size: 1.1em;
+}
+
+table {
+    align-items: center;
+    width: 35%;
+    margin: 2em 0;
+    background: linear-gradient(180deg, #f8fafa 0%, #878684 100%);
+}
+
+thead {
+    background-color: #574d45;
+    color: #E6E6FA;
+    font-weight: bold;
+}
+
+td,
+th {
+    border: 1px solid #000000;
+    padding: 8px 15px;
+    text-align: center;
+}
+
+.horarios {
+    width: 50%;
+}
+

@@ -1,0 +1,14 @@
+body {
+  background-image: url('./assets/img/carbon_fibre.png');
+  margin: 0;
+  padding: 0;
+}
+
+footer {
+
+  color: #FFFFFF;
+  min-height: 20%;
+  width: 100%;
+  padding: 2em;
+  margin: 0;
+}
