@@ -23,14 +23,26 @@ export const ContactoPage = () => {
                   <input type="text" className="form-control" placeholder="Apellido" />
                 </div>
                 <div className="col-6 formulario__grupo">
+                  <input type="password" className="form-control" placeholder='Contraseña' id="password" />
+                </div>
+              <div className="col-6 formulario__grupo">
+                <input type="password" className="form-control" placeholder='Repetir Contraseña' id="password2" />
+              </div>
+                <div className="col-6 formulario__grupo">
                   <input type="email" className="form-control" placeholder="Email" id="email" />
                 </div>
-                <div className="col-6 formulario__grupo">
-                  <input type="password" className="form-control" placeholder='Password' id="password" />
-                </div>
+              <div className="col-6 formulario__grupo">
+                <input type="text" className="form-control" placeholder="telefono" id="telefono" />
+              </div>
+              <div className="formulario__grupo" id="grupo__terminos">
+                <label className="formulario__label">
+                  <input className="formulario__checkbox" type="checkbox" name="terminos" id="terminos" />
+                    Acepto los Terminos y Condiciones
+                </label>
                 <div className="boton">
                   <button className='btn btn-outline-secondary col-3 '>Enviar</button>
                 </div>
+              </div>
                 <div className="form-contact">
                   <div className="row">
                     <div className="col-6">
@@ -99,7 +111,10 @@ export const ContactoPage = () => {
             </div>
           </div>
         </div>
+
+      <script src="../js/formulario.js"></script>
       <FooterComponent></FooterComponent>
+
     </body>
   )
 }

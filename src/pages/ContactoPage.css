@@ -6,7 +6,7 @@ main {
     background: #f8fafa;
     background: linear-gradient(180deg, #f8fafa 0%, #878684 100%);
     display: block;
-    width: 70%;
+    width: 65%;
     align-items: center;
 }
 
@@ -67,6 +67,10 @@ main {
     cursor: pointer;
 }
 
+.formulario__checkbox {
+    margin-right: 10px;
+}
+
 .boton {
     display: flex;
     align-items: center;
@@ -99,6 +103,6 @@ th {
 }
 
 .horarios {
-    width: 50%;
+    width: 40%;
 }
 
