@@ -1,16 +1,14 @@
 import { useEffect, useState } from 'react';
 import servicioBanner from '../assets/img/servicios-bg.jpg';
-
-
+import Servicios from '../json/servicios.json';
+import './ServiciosComponent.css';
 
 
 export const ServiciosComponent = ()=> {
     const [servicios, setServicios] = useState([])
 
     useEffect(() => {
-        fetch('../json/servicios.json')
-            .then((response) => response.json())
-            .then((servicio) => setServicios(servicio))
+        setServicios(Servicios)
     }, [])
     return (
         <body>
@@ -20,19 +18,20 @@ export const ServiciosComponent = ()=> {
             <div className="container mt-5 servicio">
                 <h1 className='text-center'>Servicios:</h1>
                 <hr />
-                <div>
+                <div className="service">
                     {
-                        servicios.map(({ id, image, title, description, price }) => (
-                            <div key={id} className="card">
-                                <img src={image} className="img-fluid" alt={id} />
-                                <div className="card-body">
-                                    <h3 className="card-title">{title}</h3>
-                                    <p className="card-text">{description}</p>
-                                    <p className='card-text'><span>$</span>{price}</p>
+                        servicios.map((servicio) => (
+                            <div key={servicio.id} className='service__content'>
+                                <div className="service__section">
+                                    <img src={servicio.image} className="service__img" alt={servicio.id} />
+                                    <div className="service__body">
+                                        <h3 className="service__title">{servicio.title}</h3>
+                                        <p className="service__description">{servicio.description}</p>
+                                        <p className='service__price'><span>$</span>{servicio.price}</p>
+                                    </div>
                                 </div>
                             </div>
-                        )
-                        )}
+                        ))}
                 </div>
             </div>
         </body>

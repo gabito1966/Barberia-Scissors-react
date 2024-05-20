@@ -1,0 +1,45 @@
+.servicio{
+    background: linear-gradient(#bf6666, #f0ebe9);
+    height: 100%;
+    padding: 0;
+}
+
+.servicio h1{
+    font-size: 3em;
+    justify-content: center;
+}
+
+.service {
+    background-color: #6f7c78;
+    width: 100%;
+    padding: 20px 16px;
+    border-radius: 0.8px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    
+}
+
+.service__img {
+    width: 320px;
+    border-radius: 1em;
+    display: block;
+    margin: auto;
+}
+
+.service__body {
+    text-align: center;
+    display: block;
+    margin-top: 1em;
+}
+.service__title {
+    text-decoration: underline;
+}
+
+.service__description{
+    font-size: 1.2em;
+}
+.service__price {
+    font-size: 2em;
+    font-weight: bold;
+}

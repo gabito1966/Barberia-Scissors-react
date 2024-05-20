@@ -1,38 +1,40 @@
 import { useEffect, useState } from 'react'
 import ProductoBanner from '../assets/img/product-bg.jpg'
 import Productos from '../json/productos.json'
+import './ProductosComponent.css'
 
 export const ProductosComponent = () => {
     const [productos, setProductos] = useState([])
 
     useEffect(() => {
-        fetch(Productos)
-            .then(response => response.json())
-            .then((producto) => setProductos(producto))
+        setProductos(Productos)
     }, [])
     return (
         <body>
-            <div className='container-fluid'>
-                <img className='img-fluid d-block mx-auto' width={1200} height={300} src={ProductoBanner} alt="Producto banner" />
+            <div className='container-fluid text-center'>
+                <img className='img-fluid' width={1200} height={300} src={ProductoBanner} alt="Producto banner" />
             </div>
             <div className="container mt-5 producto">
                 <h1 className='text-center'>Productos:</h1>
                 <hr />
-                <div>
+                <div className='product'>
                     {
-                        productos.map(({ id, image, title, family, price }) => (
-                            <div key={id} className="card">
-                                <img src={image} className="img-fluid" alt={id} />
-                                <div className="card-body">
-                                    <h3 className="card-title">{family}</h3>
-                                    <p className="card-title">{title}</p>
-                                    <p className='card-description'><span>$</span>{price}</p>
+                        productos.map((producto) => (
+                            <div key={producto.id} className="product__content">
+                                <div className="product__section">
+                                    <img src={producto.image} className="product__img" alt={producto.id} />
+                                    <div className="product__body">
+                                        <h3 className="product__family">{producto.family}</h3>
+                                        <p className="product__title">{producto.title}</p>
+                                        <p className='product__price'><span>$</span>{producto.price}</p>
+                                    </div>
                                 </div>
                             </div>
-                        )
-                        )}
+                        ))}
                 </div>
             </div>
         </body>
     )
+
 }
+
