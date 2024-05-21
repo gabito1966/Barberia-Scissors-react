@@ -13,15 +13,19 @@
     background-color: #6f7c78;
     width: 100%;
     padding: 20px 16px;
-    border-radius: 0.8px;
+    border-radius: 1em;
     display: flex;
     flex-wrap: wrap;
-    gap: 2em;
-    
+    gap: 2.5em;
+}
+
+.service__content {
+    background-color: #f0ebe9;
+    border-radius: 1em;
 }
 
 .service__img {
-    width: 320px;
+    width: 346px;
     border-radius: 1em;
     display: block;
     margin: auto;
@@ -37,7 +41,7 @@
 }
 
 .service__description{
-    font-size: 1.2em;
+    font-size: 1.1em;
 }
 .service__price {
     font-size: 2em;
